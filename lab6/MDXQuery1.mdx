@@ -1,0 +1,10 @@
+SELECT 
+    {[Measures].[Number of total usages]} ON COLUMNS,
+    {
+		([Date].[Hierarchy].[Year].&[2023].&[January]),
+		([Date].[Hierarchy].[Year].&[2022].&[January])
+	} ON ROWS
+FROM 
+    [Warehouse]
+
+--Compare the total amount of ski lift usage for this month to the same month last year

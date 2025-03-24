@@ -1,0 +1,301 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="482f288d-b524-4a7a-aced-2cb72be4c738" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Ski Slope</ID>
+  <Name>Ski Slope</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3539" scrolltop="-6668" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12118" y="18336" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Ski_Slope" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="5001" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008913000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Ski_Slope" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3539</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6668</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="7f5fb346-f76f-426c-9e9d-8ee70506403a">
+    <DataSourceViewID>Warehouse</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="37c87cd9-9811-4463-aa51-ce1f08714892">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="211bf7cd-085e-48ca-9679-3e14efed0c7f">
+      <ID>ID Slope</ID>
+      <Name>ID Slope</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e90816bb-c4a3-4b50-bfd4-a1f9d8a0674c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d373ddd-7f96-4b58-b268-0c3e0ef5f9ad">
+            <TableID>dbo_Ski_Slope</TableID>
+            <ColumnID>ID_Slope</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f0eee986-5deb-4d1b-808b-22481bfb0587">
+          <AttributeID>Slope Number</AttributeID>
+          <Name>Slope Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a7541ca7-556b-4fa8-a863-49c5677bcb81">
+          <AttributeID>Zone</AttributeID>
+          <Name>Zone</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="98f18bc5-a8ff-4338-9f48-64391e2d04f1">
+          <AttributeID>Bottom Altitude Class</AttributeID>
+          <Name>Bottom Altitude Class</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="80f3f94b-5877-49c3-b1c2-7cc574072a14">
+          <AttributeID>Top Altitude Class</AttributeID>
+          <Name>Top Altitude Class</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="37e76ec4-2617-43ee-a08f-091c2eebf981">
+          <AttributeID>Length Range</AttributeID>
+          <Name>Length Range</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="37df06f4-0da0-442e-a305-c4f99ac526ab">
+          <AttributeID>Difficulty</AttributeID>
+          <Name>Difficulty</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="039bcf5b-9374-4e4e-99df-b7c47cf3de6e">
+          <AttributeID>Slope Manufacturer</AttributeID>
+          <Name>Slope Manufacturer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="256c4879-0b34-405d-95fa-c40ff06cad79">
+          <AttributeID>Construction Cost Range</AttributeID>
+          <Name>Construction Cost Range</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2804e41e-4dc6-44b6-be29-2e1dba22898a">
+          <AttributeID>Construction Date Range</AttributeID>
+          <Name>Construction Date Range</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6cfb5201-45d6-4155-ac90-593bfb3bdd7a">
+          <AttributeID>Snow Cannon Amount Class</AttributeID>
+          <Name>Snow Cannon Amount Class</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cc8b5e80-dfe8-4d05-b7d3-d87559e934ef">
+      <ID>Slope Number</ID>
+      <Name>Slope Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0eaf4685-24c9-4fd4-bcb9-3b25c33b53da">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6feebfcd-b032-40db-b69a-d750d754cf05">
+            <TableID>dbo_Ski_Slope</TableID>
+            <ColumnID>Slope_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3d224e50-505c-4b45-b9be-5da0dadafc40">
+      <ID>Zone</ID>
+      <Name>Zone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2a7a1ccb-baa5-4693-8de5-753246c1abae">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e467484-9ee9-4b02-be9f-5b7fea60fe6d">
+            <TableID>dbo_Ski_Slope</TableID>
+            <ColumnID>Zone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="839b3ed7-a7c7-4f9a-aae5-7b65672fd99c">
+      <ID>Bottom Altitude Class</ID>
+      <Name>Bottom Altitude Class</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="179ecd0d-671b-4ec1-a384-23c660e0ed61">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="712d2492-c808-4511-81e2-e45e972a01c6">
+            <TableID>dbo_Ski_Slope</TableID>
+            <ColumnID>Bottom_Altitude_Class</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5c81e97a-b366-4f00-9e97-24a8dfeabf63">
+      <ID>Top Altitude Class</ID>
+      <Name>Top Altitude Class</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="03f0719f-1482-433c-8e54-1cdeee8279a9">
+          <DataType>WChar</DataType>
+          <DataSize>14</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bcf4b6bc-ac5e-4abf-97d3-2660bcdeb423">
+            <TableID>dbo_Ski_Slope</TableID>
+            <ColumnID>Top_Altitude_Class</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3b78899e-38a1-4388-8bf4-a317f36eef5c">
+      <ID>Length Range</ID>
+      <Name>Length Range</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f95f58e4-1c54-49a8-b304-43be8dd80c3d">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b13e535a-c8f7-4625-8bdf-f18c1c5080a3">
+            <TableID>dbo_Ski_Slope</TableID>
+            <ColumnID>Length_Range</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bb8c0711-998b-4b39-a647-ab06c24ddc23">
+      <ID>Difficulty</ID>
+      <Name>Difficulty</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c205a500-8f49-4f42-aec4-30bc4ad9c0e8">
+          <DataType>WChar</DataType>
+          <DataSize>13</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ff535afa-a0bf-473f-93f8-c11eab05d8e3">
+            <TableID>dbo_Ski_Slope</TableID>
+            <ColumnID>Difficulty</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5e77a40e-d03d-4880-a34f-6965a6f5365d">
+      <ID>Slope Manufacturer</ID>
+      <Name>Slope Manufacturer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="800d6f31-1ce9-4123-a45d-ceb81bc65f97">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7557acb3-d73b-442a-8716-45e60efad974">
+            <TableID>dbo_Ski_Slope</TableID>
+            <ColumnID>Slope_Manufacturer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7d64a462-f477-4103-a137-f5aa4dd0162c">
+      <ID>Construction Cost Range</ID>
+      <Name>Construction Cost Range</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cc6c760a-011e-47d7-853e-d0fe5556fc52">
+          <DataType>WChar</DataType>
+          <DataSize>21</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea2b9a58-ed00-4100-8c94-138566deaada">
+            <TableID>dbo_Ski_Slope</TableID>
+            <ColumnID>Construction_Cost_Range</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="56299b2f-802a-40b9-a699-a4c94352f71e">
+      <ID>Construction Date Range</ID>
+      <Name>Construction Date Range</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5d00d568-e4fb-43d2-adb0-c55ed0f61173">
+          <DataType>WChar</DataType>
+          <DataSize>21</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ba638bd1-5952-46e3-b391-8d1440a1b79e">
+            <TableID>dbo_Ski_Slope</TableID>
+            <ColumnID>Construction_Date_Range</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c843284d-fe5b-4ec3-aad1-07e5bf37f5b8">
+      <ID>Snow Cannon Amount Class</ID>
+      <Name>Snow Cannon Amount Class</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="875681c4-c928-4161-91ea-561cf77cb1d8">
+          <DataType>WChar</DataType>
+          <DataSize>17</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b814f6a-6985-4c63-97f1-ec6eddacef1e">
+            <TableID>dbo_Ski_Slope</TableID>
+            <ColumnID>Snow_Cannon_Amount_Class</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

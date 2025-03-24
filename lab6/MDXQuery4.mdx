@@ -1,0 +1,10 @@
+SELECT 
+    { [Measures].[Number of total usages] } ON COLUMNS, 
+    TOPCOUNT(
+        { ([Ski Lift].[Lift Manufacturer].[Lift Manufacturer].ALLMEMBERS, [Date].[Hierarchy].[Year].&[2022].&[January]) },
+        1,
+        [Measures].[Number of total usages]
+    ) ON ROWS 
+FROM [Warehouse]
+
+--Which lift manufacturer achieved the greatest number of riders this month

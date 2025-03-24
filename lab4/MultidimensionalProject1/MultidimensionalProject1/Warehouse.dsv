@@ -1,0 +1,517 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0bbcef92-435c-4a21-9a50-b39e5086e98d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Warehouse</ID>
+  <Name>Warehouse</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Warehouse</DataSourceID>
+  <Schema>
+    <xs:schema id="Warehouse" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Warehouse" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="941ffeb6-d00a-4178-a964-61688c3da2d2">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Customers" msprop:DbTableName="Customers" msprop:FriendlyName="Customers" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="bdc8fa5a-7e94-40da-bb87-ae796287acf4">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_Customer" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_Customer" msprop:DbColumnName="ID_Customer" msprop:design-time-name="5c7bd525-10ec-4850-a434-9abc332e9a1e" type="xs:int" />
+                  <xs:element name="Customer_ID" msprop:FriendlyName="Customer_ID" msprop:DbColumnName="Customer_ID" msprop:design-time-name="55b9b317-7318-4867-94fd-29cd2dcfdf03">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Age_Range" msprop:FriendlyName="Age_Range" msprop:DbColumnName="Age_Range" msprop:design-time-name="621fe5d4-894b-4c75-8c51-868184e386e6" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Name" msprop:FriendlyName="Name" msprop:DbColumnName="Name" msprop:design-time-name="54fd67b5-9e2e-447b-bfd5-f735a858ceed" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Surname" msprop:FriendlyName="Surname" msprop:DbColumnName="Surname" msprop:design-time-name="2fb84363-fdd2-4f9f-9f55-c8391e02346b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Country_of_Origin" msprop:FriendlyName="Country_of_Origin" msprop:DbColumnName="Country_of_Origin" msprop:design-time-name="02499931-df5d-4c9e-8d2c-f22ab38bd78d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Is_Current" msprop:FriendlyName="Is_Current" msprop:DbColumnName="Is_Current" msprop:design-time-name="c22de8bc-fef3-4759-a0b3-42fd214de2e9" type="xs:boolean" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Date" msprop:DbTableName="Date" msprop:FriendlyName="Date" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="80887b28-dfb2-4508-8a06-6979c89bd476">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_Date" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_Date" msprop:DbColumnName="ID_Date" msprop:design-time-name="27a3922a-9bc0-4382-9a69-eeaa9d71eebd" type="xs:int" />
+                  <xs:element name="Date" msprop:FriendlyName="Date" msprop:DbColumnName="Date" msprop:design-time-name="b7e6a7c9-1994-4182-ad8c-16bb06d89140" type="xs:int" />
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="54363757-b3aa-49d9-b3b4-a0379a969be1" type="xs:int" />
+                  <xs:element name="Month" msprop:FriendlyName="Month" msprop:DbColumnName="Month" msprop:design-time-name="bab7604f-8a98-47f1-9a59-5da306a5e32b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MonthNo" msprop:FriendlyName="MonthNo" msprop:DbColumnName="MonthNo" msprop:design-time-name="9b5017da-b162-47fc-a06d-1d3ff4244fef" type="xs:int" />
+                  <xs:element name="DayOfWeek" msprop:FriendlyName="DayOfWeek" msprop:DbColumnName="DayOfWeek" msprop:design-time-name="3c86bcc4-1776-41ed-9915-5d9041808b7c" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="WorkingDay" msprop:FriendlyName="WorkingDay" msprop:DbColumnName="WorkingDay" msprop:design-time-name="95096a41-8c00-41e8-9baf-2c64a928e9e0" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="15" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Vacation" msprop:FriendlyName="Vacation" msprop:DbColumnName="Vacation" msprop:design-time-name="806b91db-9450-47ea-912a-c8cfab2055af" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="Holiday" msprop:FriendlyName="Holiday" msprop:DbColumnName="Holiday" msprop:design-time-name="7cce76f6-d24e-4723-8fae-d956767df0c4" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="AfterHolidayDay" msprop:FriendlyName="AfterHolidayDay" msprop:DbColumnName="AfterHolidayDay" msprop:design-time-name="e9c1eb15-ed44-4bf8-a886-9885879c5b29" type="xs:boolean" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Junk" msprop:DbTableName="Junk" msprop:FriendlyName="Junk" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="d4b2bd55-740e-417e-8198-ea19e3be8058">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_Junk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_Junk" msprop:DbColumnName="ID_Junk" msprop:design-time-name="68e00267-237c-4226-882e-cd177a19b5fa" type="xs:int" />
+                  <xs:element name="Was_Under_Repair" msprop:FriendlyName="Was_Under_Repair" msprop:DbColumnName="Was_Under_Repair" msprop:design-time-name="f8665378-52d8-4fa5-b575-6a563e5a8706" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="Was_Under_Maintenance" msprop:FriendlyName="Was_Under_Maintenance" msprop:DbColumnName="Was_Under_Maintenance" msprop:design-time-name="60674d3d-317b-4a4d-8d15-fc434751dbdc" type="xs:boolean" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Ski_Lift" msprop:DbTableName="Ski_Lift" msprop:FriendlyName="Ski_Lift" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="b53e4e92-bf43-4945-8806-98aceb11854b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_Lift" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_Lift" msprop:DbColumnName="ID_Lift" msprop:design-time-name="a84f7ab4-c94b-40dc-9e3d-223184d2268e" type="xs:int" />
+                  <xs:element name="Lift_Number" msprop:FriendlyName="Lift_Number" msprop:DbColumnName="Lift_Number" msprop:design-time-name="3ea42ed7-0072-4a00-b456-e3176dda89d3">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Zone" msprop:FriendlyName="Zone" msprop:DbColumnName="Zone" msprop:design-time-name="769d02d5-259a-4416-ad9a-1c6822c44265" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Bottom_Altitude_Class" msprop:FriendlyName="Bottom_Altitude_Class" msprop:DbColumnName="Bottom_Altitude_Class" msprop:design-time-name="a36300a7-5f1b-44bc-b6fd-ef9be23ff33c" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Top_Altitude_Class" msprop:FriendlyName="Top_Altitude_Class" msprop:DbColumnName="Top_Altitude_Class" msprop:design-time-name="7e2f60c9-d706-47c8-bd2f-763edb67ffbf" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="14" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Lift_Type" msprop:FriendlyName="Lift_Type" msprop:DbColumnName="Lift_Type" msprop:design-time-name="645a4eb9-df47-4423-83ed-a2bbc9e65a9b" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="12" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Length_Range" msprop:FriendlyName="Length_Range" msprop:DbColumnName="Length_Range" msprop:design-time-name="082d6cd9-06aa-4900-bddd-9d3ef681eff3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Ride_Time_Range" msprop:FriendlyName="Ride_Time_Range" msprop:DbColumnName="Ride_Time_Range" msprop:design-time-name="3bcdb92d-16fe-4978-bafe-80a55436430e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Maximum_Throughput_Class" msprop:FriendlyName="Maximum_Throughput_Class" msprop:DbColumnName="Maximum_Throughput_Class" msprop:design-time-name="4c7b10f5-e1ec-4301-903b-309eb7a428ea" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="8" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Opening_Time_Range" msprop:FriendlyName="Opening_Time_Range" msprop:DbColumnName="Opening_Time_Range" msprop:design-time-name="5c094936-b9bc-452c-9ade-5f274a3c32e9" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="23" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Closing_Time_Range" msprop:FriendlyName="Closing_Time_Range" msprop:DbColumnName="Closing_Time_Range" msprop:design-time-name="fc2634b6-4a03-4127-9626-b1d419734549" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="23" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Lift_Manufacturer" msprop:FriendlyName="Lift_Manufacturer" msprop:DbColumnName="Lift_Manufacturer" msprop:design-time-name="382cd004-6156-40b2-91fa-c6eafe448ae1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Lift_Model_Number" msprop:FriendlyName="Lift_Model_Number" msprop:DbColumnName="Lift_Model_Number" msprop:design-time-name="c22467f7-7b51-4917-ad6a-3114e91eec48" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Lift_Assembly_Company" msprop:FriendlyName="Lift_Assembly_Company" msprop:DbColumnName="Lift_Assembly_Company" msprop:design-time-name="8340c1d4-bb62-4b04-b355-f33ef2ba9421" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Production_Cost_Range" msprop:FriendlyName="Production_Cost_Range" msprop:DbColumnName="Production_Cost_Range" msprop:design-time-name="f25b2673-b211-47e2-94eb-f5acfe42c276" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="19" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Construction_Cost_Range" msprop:FriendlyName="Construction_Cost_Range" msprop:DbColumnName="Construction_Cost_Range" msprop:design-time-name="b52e04e4-9596-449a-a51c-0765604a8f0f" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="19" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Construction_Date_Range" msprop:FriendlyName="Construction_Date_Range" msprop:DbColumnName="Construction_Date_Range" msprop:design-time-name="fdee8bbc-0178-4145-ada5-ff7b645623b4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="21" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Support_Tower_Count_Class" msprop:FriendlyName="Support_Tower_Count_Class" msprop:DbColumnName="Support_Tower_Count_Class" msprop:design-time-name="96e860d3-30bd-4e9c-b489-a81625960599" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="17" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Is_Current" msprop:FriendlyName="Is_Current" msprop:DbColumnName="Is_Current" msprop:design-time-name="6d942af6-97ea-4c9f-b614-d16909a04551" type="xs:boolean" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Ski_Lift_Usage" msprop:DbTableName="Ski_Lift_Usage" msprop:FriendlyName="Ski_Lift_Usage" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="d371c10f-c001-45e9-b76c-2d4594c106e6">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_Lift" msprop:FriendlyName="ID_Lift" msprop:DbColumnName="ID_Lift" msprop:design-time-name="429d85a7-4676-428a-af08-461962dfc68e" type="xs:int" />
+                  <xs:element name="ID_SkiPass" msprop:FriendlyName="ID_SkiPass" msprop:DbColumnName="ID_SkiPass" msprop:design-time-name="01effc6f-e53e-4443-8ea9-341116ae887c" type="xs:int" />
+                  <xs:element name="Use_Date" msprop:FriendlyName="Use_Date" msprop:DbColumnName="Use_Date" msprop:design-time-name="0d403489-6c52-4f69-9ed8-60d64e188b4d" type="xs:int" />
+                  <xs:element name="Use_Time" msprop:FriendlyName="Use_Time" msprop:DbColumnName="Use_Time" msprop:design-time-name="f53a0eca-46d9-46db-b2f9-7332c5d7fc5c" type="xs:int" />
+                  <xs:element name="ID_Junk" msprop:FriendlyName="ID_Junk" msprop:DbColumnName="ID_Junk" msprop:design-time-name="56248236-81f0-4436-933c-28e3f5e8a94d" type="xs:int" minOccurs="0" />
+                  <xs:element name="Usage_Number" msprop:FriendlyName="Usage_Number" msprop:DbColumnName="Usage_Number" msprop:design-time-name="77779414-9382-48df-9748-5a0465e4ac48" type="xs:int" />
+                  <xs:element name="Ride_Time" msprop:FriendlyName="Ride_Time" msprop:DbColumnName="Ride_Time" msprop:design-time-name="5403e67b-b553-4f03-a639-ccc0b0941646" type="xs:int" minOccurs="0" />
+                  <xs:element name="Lift_Length" msprop:FriendlyName="Lift_Length" msprop:DbColumnName="Lift_Length" msprop:design-time-name="40a650ca-5204-4980-9f15-b9b5088725a3" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Ski_Pass" msprop:DbTableName="Ski_Pass" msprop:FriendlyName="Ski_Pass" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="f64c0f3e-0716-4aeb-9115-4792467a5915">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_SkiPass" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_SkiPass" msprop:DbColumnName="ID_SkiPass" msprop:design-time-name="b04a2eee-78df-45c6-b121-29b1af72940b" type="xs:int" />
+                  <xs:element name="Ski_Pass_Number" msprop:FriendlyName="Ski_Pass_Number" msprop:DbColumnName="Ski_Pass_Number" msprop:design-time-name="e1a703bb-6808-4b2b-819b-404141760718" type="xs:int" />
+                  <xs:element name="Date_of_Issue_Range" msprop:FriendlyName="Date_of_Issue_Range" msprop:DbColumnName="Date_of_Issue_Range" msprop:design-time-name="5c16fdf2-20ab-4550-85b8-de8fd57a6a4e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Expiration_Date_Range" msprop:FriendlyName="Expiration_Date_Range" msprop:DbColumnName="Expiration_Date_Range" msprop:design-time-name="3a9b3402-e37e-4f02-add7-fb4a98212015" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Duration_Class" msprop:FriendlyName="Duration_Class" msprop:DbColumnName="Duration_Class" msprop:design-time-name="cc9edc3e-ad76-4e1c-bb55-3c8b31ef4bbc" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Available_Zones" msprop:FriendlyName="Available_Zones" msprop:DbColumnName="Available_Zones" msprop:design-time-name="4dad1963-411b-4432-95d5-23b538142b75" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="4" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Price_Range" msprop:FriendlyName="Price_Range" msprop:DbColumnName="Price_Range" msprop:design-time-name="555d9e67-d2f4-4f57-9be9-d6d907a3eafb" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID_Customer" msprop:FriendlyName="ID_Customer" msprop:DbColumnName="ID_Customer" msprop:design-time-name="c4e78ba0-f01b-4667-97ca-74364bc2fa66" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Ski_Slope" msprop:DbTableName="Ski_Slope" msprop:FriendlyName="Ski_Slope" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="c3ca93b3-24cf-457a-8d19-b6d45e0c1817">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_Slope" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_Slope" msprop:DbColumnName="ID_Slope" msprop:design-time-name="92628a68-794a-443c-8e9c-c4a40bd4f1b4" type="xs:int" />
+                  <xs:element name="Slope_Number" msprop:FriendlyName="Slope_Number" msprop:DbColumnName="Slope_Number" msprop:design-time-name="5721ab00-2359-4fbd-abd7-4a4e63367a75" type="xs:int" />
+                  <xs:element name="Zone" msprop:FriendlyName="Zone" msprop:DbColumnName="Zone" msprop:design-time-name="06fa8e38-c136-433e-be23-fc137cd61ea7" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Bottom_Altitude_Class" msprop:FriendlyName="Bottom_Altitude_Class" msprop:DbColumnName="Bottom_Altitude_Class" msprop:design-time-name="a6f41c37-f559-4b5b-8b52-a45bdb75ae6e" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Top_Altitude_Class" msprop:FriendlyName="Top_Altitude_Class" msprop:DbColumnName="Top_Altitude_Class" msprop:design-time-name="ef731580-f642-437c-bd46-e07803cbddd4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="14" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Length_Range" msprop:FriendlyName="Length_Range" msprop:DbColumnName="Length_Range" msprop:design-time-name="dcb81e71-ca5e-49a5-93fe-9160e697f292" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Difficulty" msprop:FriendlyName="Difficulty" msprop:DbColumnName="Difficulty" msprop:design-time-name="fb8620f4-e1fd-45ad-af25-1fe954f36601" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="13" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Slope_Manufacturer" msprop:FriendlyName="Slope_Manufacturer" msprop:DbColumnName="Slope_Manufacturer" msprop:design-time-name="b64ab746-93c5-4908-84e8-337ced771d63" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Construction_Cost_Range" msprop:FriendlyName="Construction_Cost_Range" msprop:DbColumnName="Construction_Cost_Range" msprop:design-time-name="395fc625-552d-4436-b1c2-5833056646e1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="21" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Construction_Date_Range" msprop:FriendlyName="Construction_Date_Range" msprop:DbColumnName="Construction_Date_Range" msprop:design-time-name="c69e8097-80c7-4b5a-871b-a5cff0ace6bf" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="21" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Snow_Cannon_Amount_Class" msprop:FriendlyName="Snow_Cannon_Amount_Class" msprop:DbColumnName="Snow_Cannon_Amount_Class" msprop:design-time-name="57f08c20-cbf7-4239-b2e4-0b672d89a028" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="17" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Is_Current" msprop:FriendlyName="Is_Current" msprop:DbColumnName="Is_Current" msprop:design-time-name="b9a5710e-5398-4960-a030-4696fde7d484" type="xs:boolean" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Slope_to_Lift" msprop:DbTableName="Slope_to_Lift" msprop:FriendlyName="Slope_to_Lift" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="c95b65aa-5457-4c0f-88ce-00c27103212b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Slope" msprop:FriendlyName="Slope" msprop:DbColumnName="Slope" msprop:design-time-name="b4faf2cf-e3be-4056-ad88-d30287775439" type="xs:int" />
+                  <xs:element name="Lift" msprop:FriendlyName="Lift" msprop:DbColumnName="Lift" msprop:design-time-name="4260e815-8677-4f37-835b-e01c65f20107" type="xs:int" />
+                  <xs:element name="Direction" msprop:FriendlyName="Direction" msprop:DbColumnName="Direction" msprop:design-time-name="aa93819c-2cd2-41b5-a4cd-1659a95e2b1d" type="xs:int" minOccurs="0" />
+                  <xs:element name="Altitude" msprop:FriendlyName="Altitude" msprop:DbColumnName="Altitude" msprop:design-time-name="f16530a8-11b1-4b72-a132-d5dd337fb70e" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Slope_to_Slope" msprop:DbTableName="Slope_to_Slope" msprop:FriendlyName="Slope_to_Slope" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="9d0db50a-2c51-4eba-b01d-2b0661fb8206">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Slope_From" msprop:FriendlyName="Slope_From" msprop:DbColumnName="Slope_From" msprop:design-time-name="67d301cb-3dd2-4d86-9381-65fc7ccecb4f" type="xs:int" />
+                  <xs:element name="Slope_To" msprop:FriendlyName="Slope_To" msprop:DbColumnName="Slope_To" msprop:design-time-name="6a734fb8-4463-4f4e-b017-58db280dbbe3" type="xs:int" />
+                  <xs:element name="Altitude" msprop:FriendlyName="Altitude" msprop:DbColumnName="Altitude" msprop:design-time-name="d9b5810a-0490-4e5f-a53f-17198afe7729" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Time" msprop:DbTableName="Time" msprop:FriendlyName="Time" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="fb519a55-4891-4e57-86a5-60deb62dccca">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_Time" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID_Time" msprop:DbColumnName="ID_Time" msprop:design-time-name="892aef25-eace-4662-b779-4b6ba4964a40" type="xs:int" />
+                  <xs:element name="Hour" msprop:FriendlyName="Hour" msprop:DbColumnName="Hour" msprop:design-time-name="b204b6e9-b47f-45cc-a5b9-a03290068c5f" type="xs:int" />
+                  <xs:element name="Minute" msprop:FriendlyName="Minute" msprop:DbColumnName="Minute" msprop:design-time-name="0801b84d-7098-4115-ab63-516ee71ea016" type="xs:int" />
+                  <xs:element name="Time_of_Day" msprop:FriendlyName="Time_of_Day" msprop:DbColumnName="Time_of_Day" msprop:design-time-name="8b71c334-d67f-4bb1-8ca8-16368e097831" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="23" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Customers" />
+          <xs:field xpath="ID_Customer" />
+        </xs:unique>
+        <xs:unique name="dbo_Date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Date" />
+          <xs:field xpath="ID_Date" />
+        </xs:unique>
+        <xs:unique name="dbo_Junk_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Junk" />
+          <xs:field xpath="ID_Junk" />
+        </xs:unique>
+        <xs:unique name="dbo_Ski_Lift_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Ski_Lift" />
+          <xs:field xpath="ID_Lift" />
+        </xs:unique>
+        <xs:unique name="dbo_Ski_Lift_Usage_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Ski_Lift_Usage" />
+          <xs:field xpath="ID_Lift" />
+          <xs:field xpath="ID_SkiPass" />
+          <xs:field xpath="Use_Date" />
+          <xs:field xpath="Use_Time" />
+        </xs:unique>
+        <xs:unique name="dbo_Ski_Pass_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Ski_Pass" />
+          <xs:field xpath="ID_SkiPass" />
+        </xs:unique>
+        <xs:unique name="dbo_Ski_Slope_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Ski_Slope" />
+          <xs:field xpath="ID_Slope" />
+        </xs:unique>
+        <xs:unique name="dbo_Slope_to_Lift_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Slope_to_Lift" />
+          <xs:field xpath="Slope" />
+          <xs:field xpath="Lift" />
+        </xs:unique>
+        <xs:unique name="dbo_Slope_to_Slope_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Slope_to_Slope" />
+          <xs:field xpath="Slope_From" />
+          <xs:field xpath="Slope_To" />
+        </xs:unique>
+        <xs:unique name="dbo_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Time" />
+          <xs:field xpath="ID_Time" />
+        </xs:unique>
+        <xs:keyref name="FK__Slope_to___Slope__628FA481" refer="dbo_Ski_Slope_Constraint1">
+          <xs:selector xpath=".//dbo_Slope_to_Slope" />
+          <xs:field xpath="Slope_From" />
+        </xs:keyref>
+        <xs:keyref name="FK__Slope_to___Slope__6383C8BA" refer="dbo_Ski_Slope_Constraint1">
+          <xs:selector xpath=".//dbo_Slope_to_Slope" />
+          <xs:field xpath="Slope_To" />
+        </xs:keyref>
+        <xs:keyref name="FK__Slope_to_L__Lift__5FB337D6" refer="dbo_Ski_Lift_Constraint1">
+          <xs:selector xpath=".//dbo_Slope_to_Lift" />
+          <xs:field xpath="Lift" />
+        </xs:keyref>
+        <xs:keyref name="FK__Slope_to___Slope__5EBF139D" refer="dbo_Ski_Slope_Constraint1">
+          <xs:selector xpath=".//dbo_Slope_to_Lift" />
+          <xs:field xpath="Slope" />
+        </xs:keyref>
+        <xs:keyref name="FK__Ski_Pass__ID_Cus__5165187F" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Ski_Pass" />
+          <xs:field xpath="ID_Customer" />
+        </xs:keyref>
+        <xs:keyref name="FK__Ski_Lift___ID_Sk__5812160E" refer="dbo_Ski_Pass_Constraint1">
+          <xs:selector xpath=".//dbo_Ski_Lift_Usage" />
+          <xs:field xpath="ID_SkiPass" />
+        </xs:keyref>
+        <xs:keyref name="FK__Ski_Lift___ID_Li__571DF1D5" refer="dbo_Ski_Lift_Constraint1">
+          <xs:selector xpath=".//dbo_Ski_Lift_Usage" />
+          <xs:field xpath="ID_Lift" />
+        </xs:keyref>
+        <xs:keyref name="FK__Ski_Lift___Use_D__59063A47" refer="dbo_Date_Constraint1">
+          <xs:selector xpath=".//dbo_Ski_Lift_Usage" />
+          <xs:field xpath="Use_Date" />
+        </xs:keyref>
+        <xs:keyref name="FK__Ski_Lift___Use_T__59FA5E80" refer="dbo_Time_Constraint1">
+          <xs:selector xpath=".//dbo_Ski_Lift_Usage" />
+          <xs:field xpath="Use_Time" />
+        </xs:keyref>
+        <xs:keyref name="FK__Ski_Lift___ID_Ju__5AEE82B9" refer="dbo_Junk_Constraint1">
+          <xs:selector xpath=".//dbo_Ski_Lift_Usage" />
+          <xs:field xpath="ID_Junk" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Warehouse xmlns="" />
+  </Schema>
+</DataSourceView>

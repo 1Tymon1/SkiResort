@@ -1,0 +1,8 @@
+SELECT 
+    {[Measures].[Average weighted ride time]} ON COLUMNS,
+    NON EMPTY{([Customers].[Age Range].[Age Range].ALLMEMBERS)} ON ROWS
+FROM 
+    [Warehouse]
+WHERE ([Date].[Hierarchy].[Year].&[2019])
+
+--Find the average time spent on lifts given age groups in 2019

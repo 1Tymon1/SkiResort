@@ -1,0 +1,10 @@
+SELECT 
+    { [Measures].[Number of total usages] } ON COLUMNS, 
+    TOPCOUNT(
+        { ([Ski Lift].[ID Lift].[ID Lift].ALLMEMBERS, [Date].[Year].[2022]) },
+        1,
+        [Measures].[Number of total usages]
+    ) ON ROWS 
+FROM [Warehouse]
+
+--Find the lift with the biggest number of uses this season
