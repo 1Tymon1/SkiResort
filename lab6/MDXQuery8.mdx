@@ -1,0 +1,7 @@
+SELECT 
+    {[Measures].[Average SS altitude]} ON COLUMNS,
+    NON EMPTY {([Slope To].[ID Slope].[ID Slope].ALLMEMBERS)} ON ROWS
+FROM 
+    [Warehouse]
+
+--which ski slope has the highest average connection points

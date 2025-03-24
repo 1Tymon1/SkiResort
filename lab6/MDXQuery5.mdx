@@ -1,0 +1,12 @@
+SELECT 
+    { [Measures].[Number of total usages] } ON COLUMNS, 
+    TOPCOUNT(
+        { ([Ski Lift].[ID Lift].[ID Lift].ALLMEMBERS, [Date].[Year].[2021]) },
+        5,
+        [Measures].[Number of total usages]
+    ) ON ROWS 
+FROM [Warehouse]
+Where
+	([Ski Lift].[Lift Type].&[chairlift])
+
+--What were the 5 most used chairlifts in 2021

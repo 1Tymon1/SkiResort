@@ -1,0 +1,12 @@
+SELECT 
+    { [Measures].[Number of total usages] } ON COLUMNS, 
+    TOPCOUNT(
+        { ([Ski Lift].[ID Lift].[ID Lift].ALLMEMBERS) },
+        10,
+        [Measures].[Number of total usages]
+    ) ON ROWS 
+FROM [Warehouse]
+Where
+	([Date].[Holiday].&[True])
+
+--Find the 10 most used lifts during national holiday days

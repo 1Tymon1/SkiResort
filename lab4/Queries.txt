@@ -1,0 +1,39 @@
+1 Compare the total amount of ski lift usage for this month to the same month last year
+
+SELECT NON EMPTY { [Measures].[Number of total usages] } ON COLUMNS, NON EMPTY { ([Date].[Hierarchy].[Month].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Date].[Month].&[March] } ) ON COLUMNS FROM [Warehouse]) WHERE ( [Date].[Month].&[March] ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+2 Find the lift with the biggest number of uses this season
+
+SELECT NON EMPTY { [Measures].[Number of total usages] } ON COLUMNS, NON EMPTY { ([Ski Lift].[ID Lift].[ID Lift].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Date].[Year].&[2022] } ) ON COLUMNS FROM [Warehouse]) WHERE ( [Date].[Year].&[2022] ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+3 Compare the lift type which achieved the greatest number of riders this month and the same month last year
+
+ SELECT NON EMPTY { [Measures].[Number of total usages] } ON COLUMNS, NON EMPTY { ([Ski Lift].[Lift Type].[Lift Type].ALLMEMBERS * [Date].[Year].[Year].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Date].[Month].&[March] } ) ON COLUMNS FROM ( SELECT ( { [Date].[Year].&[2023], [Date].[Year].&[2022] } ) ON COLUMNS FROM [Warehouse])) WHERE ( [Date].[Month].&[March] ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+4 Which lift manufacturer achieved the greatest number of riders this month and the same month last season?
+
+ SELECT NON EMPTY { [Measures].[Number of total usages] } ON COLUMNS, NON EMPTY { ([Date].[Year].[Year].ALLMEMBERS * [Ski Lift].[Lift Manufacturer].[Lift Manufacturer].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Date].[Month].&[March] } ) ON COLUMNS FROM ( SELECT ( { [Date].[Year].&[2023], [Date].[Year].&[2022] } ) ON COLUMNS FROM [Warehouse])) WHERE ( [Date].[Month].&[March] ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+5 What was the average ride time on a ski lift in a given season?
+
+ SELECT NON EMPTY { [Measures].[Average weighted ride time] } ON COLUMNS, NON EMPTY { ([Ski Lift].[ID Lift].[ID Lift].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Ski Lift].[ID Lift].&[2] } ) ON COLUMNS FROM ( SELECT ( { [Date].[Month].&[March] } ) ON COLUMNS FROM ( SELECT ( { [Date].[Year].&[2022] } ) ON COLUMNS FROM [Warehouse]))) WHERE ( [Date].[Year].&[2022], [Date].[Month].&[March] ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+6 Did the 10 most used lifts change during national holiday days?
+
+ SELECT NON EMPTY { [Measures].[Number of total usages] } ON COLUMNS, NON EMPTY { ([Ski Lift].[ID Lift].[ID Lift].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Date].[Holiday].&[True] } ) ON COLUMNS FROM [Warehouse]) WHERE ( [Date].[Holiday].&[True] ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+7 What is the average ride time on all ski lifts of a given type?
+
+ SELECT NON EMPTY { [Measures].[Average weighted ride time] } ON COLUMNS, NON EMPTY { ([Ski Lift].[Lift Type].[Lift Type].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM ( SELECT ( { [Ski Lift].[Lift Type].&[magic carpet] } ) ON COLUMNS FROM [Warehouse]) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+8 What slope has the highest connection points, on average?
+
+ SELECT NON EMPTY { [Measures].[Average SS altitude] } ON COLUMNS, NON EMPTY { ([Slope To].[ID Slope].[ID Slope].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Warehouse] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+9 What was the average ride time experienced by a specific customer age group?
+
+ SELECT NON EMPTY { [Measures].[Average weighted ride time] } ON COLUMNS FROM ( SELECT ( { [Customers].[Age Range].&[from 25 to 30], [Customers].[Age Range].&[from 31 to 40] } ) ON COLUMNS FROM [Warehouse]) WHERE ( [Customers].[Age Range].CurrentMember ) CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS
+
+10 What lift type has the highest average rider drop off altitude?
+
+ SELECT NON EMPTY { [Measures].[Average SL altitude] } ON COLUMNS, NON EMPTY { ([Ski Lift].[ID Lift].[ID Lift].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Warehouse] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS

@@ -1,0 +1,223 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e6dec4b8-fc3c-4f65-87db-93d3bb7c3bad" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Ski Pass</ID>
+  <Name>Ski Pass</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="243dd4e8-ce8f-4914-986a-e26475551065">
+    <DataSourceViewID>Warehouse</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="ab8f942c-64da-485b-a49a-d96401b8ce05">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="1f9b542a-c120-4de2-9142-2bc6ea8d7b2d">
+      <ID>ID Ski Pass</ID>
+      <Name>ID Ski Pass</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>57963</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="edd68b79-c94c-4b45-9774-f2f3cfc42cae">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6500830f-1062-4562-a4c3-dc03213bd74f">
+            <TableID>dbo_Ski_Pass</TableID>
+            <ColumnID>ID_SkiPass</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="5d0c7890-2059-4188-b285-ce742ee501b9">
+          <AttributeID>Ski Pass Number</AttributeID>
+          <Name>Ski Pass Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="43233b71-d4ef-469e-b069-671f58a10a38">
+          <AttributeID>Date Of Issue Range</AttributeID>
+          <Name>Date Of Issue Range</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5130796d-b5a0-4352-8d59-ee6aca9ba187">
+          <AttributeID>Expiration Date Range</AttributeID>
+          <Name>Expiration Date Range</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7c27e7fd-ba36-49f9-8eac-73a288d02797">
+          <AttributeID>Duration Class</AttributeID>
+          <Name>Duration Class</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c69a5e83-5341-4fa1-bd3f-290544b5556c">
+          <AttributeID>Available Zones</AttributeID>
+          <Name>Available Zones</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6dbdc0e6-04b4-451b-ad70-867303e049c3">
+          <AttributeID>Price Range</AttributeID>
+          <Name>Price Range</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f1ad3ba7-72b1-47bd-a1a0-aa68d98fd818">
+          <AttributeID>ID Customer</AttributeID>
+          <Name>ID Customer</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d6fa5a84-9da4-40bf-8022-e7734585e0f0">
+      <ID>Ski Pass Number</ID>
+      <Name>Ski Pass Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a1c48116-a0fb-4ddc-ab1f-063651001ad0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d20f6351-51f5-49f1-bf67-6a56328c0014">
+            <TableID>dbo_Ski_Pass</TableID>
+            <ColumnID>Ski_Pass_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d2f914a9-ed61-496a-b48b-74d12bd42488">
+      <ID>Date Of Issue Range</ID>
+      <Name>Date Of Issue Range</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a0a606c7-72fb-44ed-83c5-922fc685e8e2">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8176c74f-30cb-4c7e-8cd8-1588d197e74d">
+            <TableID>dbo_Ski_Pass</TableID>
+            <ColumnID>Date_of_Issue_Range</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="60cac25c-b112-42d9-8798-30a39d832dcd">
+      <ID>Expiration Date Range</ID>
+      <Name>Expiration Date Range</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ae9ca4ab-0c55-4403-8692-578f03ce2220">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a74b119a-5ae2-4bb0-80f2-b2605f7467c5">
+            <TableID>dbo_Ski_Pass</TableID>
+            <ColumnID>Expiration_Date_Range</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="db37e840-88aa-422a-ba78-069d0ea94f47">
+      <ID>Duration Class</ID>
+      <Name>Duration Class</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="83bc04c7-0fe9-4aca-9548-722fdaa5dee9">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ce009c93-3895-4994-986c-09607dd6acda">
+            <TableID>dbo_Ski_Pass</TableID>
+            <ColumnID>Duration_Class</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="814a81b0-92d3-45da-9f3e-e19da9d19a0b">
+      <ID>Available Zones</ID>
+      <Name>Available Zones</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f5d7ca2d-7192-463e-8538-add8b68a754a">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="86f2990b-5086-4f98-9b38-c94b1fd35634">
+            <TableID>dbo_Ski_Pass</TableID>
+            <ColumnID>Available_Zones</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1ac87f15-34d9-45e3-a510-c82621cdbe1a">
+      <ID>Price Range</ID>
+      <Name>Price Range</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a19be567-7eb7-4587-a1aa-5ef7f3024c0c">
+          <DataType>WChar</DataType>
+          <DataSize>20</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="55d70fd3-96bb-4a52-9427-27a7f0a92b11">
+            <TableID>dbo_Ski_Pass</TableID>
+            <ColumnID>Price_Range</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="915a2b65-51f7-48ea-8061-fa71eb80305a">
+      <ID>ID Customer</ID>
+      <Name>ID Customer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="43def395-bf63-44ee-a91b-1ea8f5c6c398">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d0ade461-cdff-4435-9617-dd094a0f837a">
+            <TableID>dbo_Ski_Pass</TableID>
+            <ColumnID>ID_Customer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,444 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f3dc3e55-d0d3-4d86-b06e-36c2db4b2e94" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Ski Lift</ID>
+  <Name>Ski Lift</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3605" scrolltop="-6668" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12118" y="18336" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Ski_Lift" left="-139" top="26" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4868" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00000413000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Ski_Lift" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3605</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6668</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>-139</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>26</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="0232da18-d5ff-43db-bd19-3a3f7f2f7a82">
+    <DataSourceViewID>Warehouse</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="ab2daaba-5bcc-48aa-a629-cf21a97160a7">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="f25a093b-e6e9-4fe5-bf80-90cac6cd1529">
+      <ID>ID Lift</ID>
+      <Name>ID Lift</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>28</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4324ef11-c315-4ebe-916a-da127a0fcbb4">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cba0ea6c-6a5d-4c55-b135-6756917b41fc">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>ID_Lift</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="2c5ea7fe-ea17-40a0-aee4-ecea5d71e323">
+          <AttributeID>Lift Number</AttributeID>
+          <Name>Lift Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="cd090ee3-743a-4b00-a27b-c66875e36ba0">
+          <AttributeID>Zone</AttributeID>
+          <Name>Zone</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="754f311e-cd0a-4b51-982a-2ee44a508a97">
+          <AttributeID>Bottom Altitude Class</AttributeID>
+          <Name>Bottom Altitude Class</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d26520c1-df55-4f19-953e-94934304e36b">
+          <AttributeID>Top Altitude Class</AttributeID>
+          <Name>Top Altitude Class</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="11d1824f-5198-456e-9558-0fd481a11296">
+          <AttributeID>Lift Type</AttributeID>
+          <Name>Lift Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2f18f110-abef-4dba-a507-6ddde41aaba9">
+          <AttributeID>Length Range</AttributeID>
+          <Name>Length Range</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b6c1afa4-6034-4324-a7bb-1ab87e8316ac">
+          <AttributeID>Ride Time Range</AttributeID>
+          <Name>Ride Time Range</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b4190a70-6837-4614-8624-faf555b21be0">
+          <AttributeID>Maximum Throughput Class</AttributeID>
+          <Name>Maximum Throughput Class</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="51507e6a-9e38-429e-96fd-f80b7df402a3">
+          <AttributeID>Opening Time Range</AttributeID>
+          <Name>Opening Time Range</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ebf6da03-7677-4def-aa14-b3d18b1205e4">
+          <AttributeID>Closing Time Range</AttributeID>
+          <Name>Closing Time Range</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="95c8a2ec-e350-47ae-8b20-227c0650fc14">
+          <AttributeID>Lift Manufacturer</AttributeID>
+          <Name>Lift Manufacturer</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="22a29f1a-1a04-4e33-9ef9-1bd6c798ae93">
+          <AttributeID>Lift Model Number</AttributeID>
+          <Name>Lift Model Number</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5b5612a6-a95c-494e-9f77-3e354143eb0d">
+          <AttributeID>Lift Assembly Company</AttributeID>
+          <Name>Lift Assembly Company</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8f329904-bbd8-4c29-bf80-62e933f72fbd">
+          <AttributeID>Production Cost Range</AttributeID>
+          <Name>Production Cost Range</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="02444c79-4b20-49c2-8cc4-90018df689dd">
+          <AttributeID>Construction Cost Range</AttributeID>
+          <Name>Construction Cost Range</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3d18718b-50fa-4d82-b6cf-611154c79250">
+          <AttributeID>Construction Date Range</AttributeID>
+          <Name>Construction Date Range</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f7d22bbf-9c0a-4fee-a1dc-f7c9f2332e07">
+          <AttributeID>Support Tower Count Class</AttributeID>
+          <Name>Support Tower Count Class</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b6142641-cd25-4e04-abc6-efa6a322b418">
+      <ID>Lift Number</ID>
+      <Name>Lift Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1ac1d70c-37b3-4c1c-9422-b64648ea2321">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2f580809-fe01-4443-8423-853bd0c2ac8b">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Lift_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="654f86f1-8119-40dc-b7a7-8880ae808d44">
+      <ID>Zone</ID>
+      <Name>Zone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e1c41558-5e53-43f7-9bc4-8cb34a42daeb">
+          <DataType>WChar</DataType>
+          <DataSize>1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc20a719-6a02-4965-856b-2175922a8bc2">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Zone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ccded1db-8f63-4a5f-aad7-3e3b48a69623">
+      <ID>Bottom Altitude Class</ID>
+      <Name>Bottom Altitude Class</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0f3bef28-6b0e-4e0a-9e46-54a0ffcff6ae">
+          <DataType>WChar</DataType>
+          <DataSize>9</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f1884895-bf14-4154-b53a-e79b9a69b737">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Bottom_Altitude_Class</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="690c1a94-e005-4524-bb24-3c3dc1596a6b">
+      <ID>Top Altitude Class</ID>
+      <Name>Top Altitude Class</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="93eabeda-2078-4e25-84d6-11b12727d887">
+          <DataType>WChar</DataType>
+          <DataSize>14</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7e477b74-f08b-41a4-b57d-2d059a93bebc">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Top_Altitude_Class</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5f221061-9026-4c52-a985-e674a074334d">
+      <ID>Lift Type</ID>
+      <Name>Lift Type</Name>
+      <EstimatedCount>4</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8f476892-3890-4100-ad93-79303755cff3">
+          <DataType>WChar</DataType>
+          <DataSize>12</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="37b16cff-33de-437f-810d-dc5b25f2f447">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Lift_Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f91bf87c-dac8-49d3-af18-0958a8e6b051">
+      <ID>Length Range</ID>
+      <Name>Length Range</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e44c17f5-cba6-4e5e-a03b-533acef736be">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e5c3dde9-b7e0-4e45-81d1-618b6f794470">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Length_Range</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2b1f9874-ad69-4253-ae1a-7c02c93d9813">
+      <ID>Ride Time Range</ID>
+      <Name>Ride Time Range</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0d600429-fa37-49cf-a0ff-32a68700a3ad">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9d3709f3-8d45-4702-a3fe-774fcadb3c30">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Ride_Time_Range</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0bdc355b-4b76-4c78-93a4-f9d684c413f0">
+      <ID>Maximum Throughput Class</ID>
+      <Name>Maximum Throughput Class</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="991a1808-eb93-447c-9d27-c864f410b35a">
+          <DataType>WChar</DataType>
+          <DataSize>8</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc1b176a-6289-4709-b2da-da341c2ce9e2">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Maximum_Throughput_Class</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="202ad817-ba52-4b2c-a92b-c4a0c7fa6e5d">
+      <ID>Opening Time Range</ID>
+      <Name>Opening Time Range</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="af7e5844-9233-40ce-ba7d-011a3a7c8533">
+          <DataType>WChar</DataType>
+          <DataSize>23</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6127a819-5df6-46ab-b8c2-61aea560eb35">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Opening_Time_Range</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ea5248d9-dd51-478b-aa48-2ba60fd6f505">
+      <ID>Closing Time Range</ID>
+      <Name>Closing Time Range</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="09e63d26-98e0-4d15-ae61-02e7f47f77d6">
+          <DataType>WChar</DataType>
+          <DataSize>23</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="66184729-348f-44c6-8998-eac49b3ebd62">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Closing_Time_Range</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="be93475b-dc85-455a-8e95-3189b27cb3af">
+      <ID>Lift Manufacturer</ID>
+      <Name>Lift Manufacturer</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d42206dd-664c-4636-bbb2-99f751949abe">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a2fae8f5-9304-47c3-9166-6415ac100152">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Lift_Manufacturer</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="86d18656-14f4-4635-a428-500def4b072f">
+      <ID>Lift Model Number</ID>
+      <Name>Lift Model Number</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="abbd3611-cc61-4345-b549-4b86d659a53e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="82273cd8-0713-40ab-8ccd-2a14744e25f3">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Lift_Model_Number</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9fbc7298-6b56-49e6-8585-9ebc750465b1">
+      <ID>Lift Assembly Company</ID>
+      <Name>Lift Assembly Company</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="78dbba47-6381-45d1-bcd2-9ce398071eb7">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e7f12486-ada1-4a24-a79e-0ab76a504979">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Lift_Assembly_Company</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="557005c9-1527-4222-8e9e-3254dfd5f797">
+      <ID>Production Cost Range</ID>
+      <Name>Production Cost Range</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f0c0abb5-e51e-4d13-9f5e-10b6f5e4aeec">
+          <DataType>WChar</DataType>
+          <DataSize>19</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="957d8479-2fc9-4b54-ba6d-60cb52fa1703">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Production_Cost_Range</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="59817c25-8902-4876-8b47-ad1ccc89b880">
+      <ID>Construction Cost Range</ID>
+      <Name>Construction Cost Range</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="626514ae-c059-4002-bff2-d79c940ef9b6">
+          <DataType>WChar</DataType>
+          <DataSize>19</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="779f6b47-fb07-41ff-be1a-67130eb25754">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Construction_Cost_Range</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="971718e3-742e-4bfe-9f79-a1f014d9a704">
+      <ID>Construction Date Range</ID>
+      <Name>Construction Date Range</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1ec05552-4477-4121-abff-2c2f203aa031">
+          <DataType>WChar</DataType>
+          <DataSize>21</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0092b0f1-d868-4675-9134-5f17a6b85700">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Construction_Date_Range</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a8e2a96e-a7d6-4761-889b-e0c0acc21bd3">
+      <ID>Support Tower Count Class</ID>
+      <Name>Support Tower Count Class</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6f6a9344-c7de-4453-82b8-e7e5df06bcf9">
+          <DataType>WChar</DataType>
+          <DataSize>17</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="22215fe3-0e5a-4cbe-a623-4b328f9fafe2">
+            <TableID>dbo_Ski_Lift</TableID>
+            <ColumnID>Support_Tower_Count_Class</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

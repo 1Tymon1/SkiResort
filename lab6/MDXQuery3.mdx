@@ -1,0 +1,12 @@
+WITH 
+MEMBER [Measures].[Usage Difference] AS 
+    ([Measures].[Number of total usages], [Date].[Year].[2022]) - 
+    ([Measures].[Number of total usages], [Date].[Year].[2023])
+SELECT 
+    { [Measures].[Usage Difference] } ON COLUMNS, 
+    { 
+        [Ski Lift].[Lift Type].[Lift Type].ALLMEMBERS 
+    } ON ROWS 
+FROM [Warehouse]
+
+-- Compare the difference in usage based on lift type between the 2023 and 2022 season

@@ -1,0 +1,7 @@
+SELECT 
+    {[Measures].[Average SL altitude]} ON COLUMNS,
+    {([Ski Lift].[Lift Type].ALLMEMBERS)} ON ROWS
+FROM 
+    [Warehouse]
+
+--what lift type has the highest average drop off altitude

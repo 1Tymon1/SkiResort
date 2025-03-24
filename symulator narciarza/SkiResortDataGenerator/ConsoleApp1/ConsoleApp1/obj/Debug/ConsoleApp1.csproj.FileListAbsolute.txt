@@ -1,0 +1,38 @@
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\Data writer\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\Data writer\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\Data writer\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\Data writer\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\Data writer\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.SuggestedBindingRedirects.cache
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\Data writer\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\Data writer\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\Data writer\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\tymon\Desktop\studia\Hurtownie dupy\symulator narciarza\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\tymon\Desktop\studia\Hurtownie dupy\symulator narciarza\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\tymon\Desktop\studia\Hurtownie dupy\symulator narciarza\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\tymon\Desktop\studia\Hurtownie dupy\symulator narciarza\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\tymon\Desktop\studia\Hurtownie dupy\symulator narciarza\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\tymon\Desktop\studia\Hurtownie dupy\symulator narciarza\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\tymon\Desktop\studia\Hurtownie dupy\symulator narciarza\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer2\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer2\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer2\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer2\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer2\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.SuggestedBindingRedirects.cache
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer2\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer2\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer2\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.SuggestedBindingRedirects.cache
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+E:\STUDIA\SEMESTR 5\Hurtownie danych\Laby\writer\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\tymon\Desktop\studia\Hurtownie danych\symulator narciarza\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\tymon\Desktop\studia\Hurtownie danych\symulator narciarza\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\tymon\Desktop\studia\Hurtownie danych\symulator narciarza\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\tymon\Desktop\studia\Hurtownie danych\symulator narciarza\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\tymon\Desktop\studia\Hurtownie danych\symulator narciarza\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\tymon\Desktop\studia\Hurtownie danych\symulator narciarza\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\tymon\Desktop\studia\Hurtownie danych\symulator narciarza\SkiResortDataGenerator\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
